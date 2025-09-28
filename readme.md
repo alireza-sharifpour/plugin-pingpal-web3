@@ -248,12 +248,12 @@ Decentralized Identity (DID) integration enables verifiable, privacy-preserving,
 
 ### 3.3 DID Method Selection Analysis
 
-| DID Method      | Suitability | Advantages                           | Considerations                    |
-| --------------- | ----------- | ------------------------------------ | --------------------------------- |
-| **did:polygon** | High        | Native to deployment chain, low cost | Requires Polygon-specific tooling |
-| **did:ethr**    | High        | EVM-compatible, wide support         | Proven in production              |
-| **did:key**     | Medium      | Self-contained, no blockchain needed | Limited to simple use cases       |
-| **did:web**     | Medium      | Easy integration with web services   | Centralization concerns           |
+| DID Method        | Suitability | Advantages                           | Considerations                    |
+| ----------------- | ----------- | ------------------------------------ | --------------------------------- |
+| **did:polygonid** | High        | Native to deployment chain, low cost | Requires Polygon-specific tooling |
+| **did:ethr**      | High        | EVM-compatible, wide support         | Proven in production              |
+| **did:key**       | Medium      | Self-contained, no blockchain needed | Limited to simple use cases       |
+| **did:web**       | Medium      | Easy integration with web services   | Centralization concerns           |
 
 ### 3.4 Verifiable Credentials Architecture
 
@@ -426,9 +426,10 @@ Autonomous smart contract-based notifications on Polygon enable trustless, autom
 │  • Implement circuit breakers for emergency stops           │
 │                                                               │
 │  Cost Estimates (Polygon):                                   │
-│  • Register notification: ~80,000 gas (~$0.0016)            │
-│  • Trigger alert: ~50,000 gas (~$0.001)                     │
-│  • Batch 10 notifications: ~300,000 gas (~$0.006)           │
+│  • Register notification: ~80,000 gas (~$0.0005)            │
+│  • Trigger alert: ~50,000 gas (~$0.0003)                    │
+│  • Batch 10 notifications: ~300,000 gas (~$0.0015)          │
+│  • Based on 28.35 Gwei gas price, POL at $0.22 (Sep 2025)  │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -573,7 +574,7 @@ Autonomous smart contract-based notifications on Polygon enable trustless, autom
 - OpenZeppelin Contracts (v5.0)
 - Chainlink Automation (v2.0)
 - W3C DID/VC Standards
-- ElizaOS Runtime
+- ElizaOS Runtime (launched July 2024, rapidly adopted with $20B+ ecosystem)
 
 **Integration Complexity:**
 
